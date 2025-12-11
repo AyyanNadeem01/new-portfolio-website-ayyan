@@ -60,7 +60,7 @@ export default function Home() {
         
         {/* Profile Image */}
         <motion.img
-          src="/ayyanimg.jpg"
+          src="https://www.creativefabrica.com/wp-content/uploads/2022/04/04/A-letter-logo-business-template-vector-Graphics-28414173-1.jpg"
           alt="Ayyan Nadeem"
           className="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover shadow-2xl border-4 border-blue-500 dark:border-blue-400 mb-8"
           initial={{ opacity: 0, scale: 0.8 }}
