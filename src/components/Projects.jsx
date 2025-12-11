@@ -5,6 +5,34 @@ import { useTheme } from "../context/ThemeContext";
 import PageTransition from "./PageTransition";
 import ProjectDetail from "./ProjectDetail";
 const projects = [
+     {
+    id: 'sensai',
+    title: 'SensAI - Live',
+    shortDesc: 'Full-stack AI-powered platform using Next.js and Google Gemini API',
+    cover: 'https://via.placeholder.com/400x240?text=SensAI',
+    screenshots: [
+      'https://via.placeholder.com/260x160?text=SS1',
+      'https://via.placeholder.com/260x160?text=SS2',
+      'https://via.placeholder.com/260x160?text=SS3',
+    ],
+    tech: ['Next.js', 'PostgreSQL (Neon)', 'Clerk Auth', 'Inngest', 'Google Gemini API'],
+    description: 'Developed a full-stack AI-powered platform using Next.js, PostgreSQL (Neon), and Clerk Authentication for secure user management. Integrated Google Gemini API for intelligent, real-time AI responses and implemented background jobs with Inngest for auto-updating industry insights.',
+    link: 'https://github.com/AyyanNadeem01/sensai'
+  },
+  {
+    id: 'product-nextjs',
+    title: 'PRODUCT - Next.js Service Website',
+    shortDesc: 'Service website with full user auth, UI, and admin dashboard in Next.js',
+    cover: 'https://via.placeholder.com/400x240?text=PRODUCT',
+    screenshots: [
+      'https://via.placeholder.com/260x160?text=SS1',
+      'https://via.placeholder.com/260x160?text=SS2',
+      'https://via.placeholder.com/260x160?text=SS3',
+    ],
+    tech: ['Next.js', 'Tailwind CSS', 'React', 'Node.js', 'Admin Dashboard'],
+    description: 'A complete service website built entirely in Next.js, featuring full user authentication, responsive UI, and a powerful admin dashboard for managing content and users.',
+    link: 'https://github.com/AyyanNadeem01/product-nextjs'
+  },
    {
     id: 'WhatsApp-Clone',
     title: 'WhatsApp Clone',
