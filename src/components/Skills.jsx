@@ -36,6 +36,7 @@ const techSections = {
     "JavaScript",
     "TypeScript",
     "React",
+    "Next.js",
     "Axios",
     "Bootstrap",
     "Tailwind CSS",
@@ -43,12 +44,18 @@ const techSections = {
     "jQuery",
     "Zustand",
     "GraphQL",
+    "Shadcn",
   ],
   "🧠 Backend & Databases": [
     "Node.js",
     "Express.js",
     "MongoDB",
+    "Postgres",
     "SQL Server",
+    "Prisma",
+    "ORM",
+    "Neon",
+    "Innjest",
     "RESTful APIs",
     "OAuth2",
     "JWT",
@@ -59,12 +66,14 @@ const techSections = {
   "🛠 Tools & Platforms": ["Git", "GitHub", "VS Code"],
 };
 
+// Icon mapping
 const iconMap = {
   HTML5: SiHtml5,
   CSS3: SiCss3,
   JavaScript: SiJavascript,
   TypeScript: SiTypescript,
   React: SiReact,
+  "Next.js": SiReact,
   Axios: SiAxios,
   Bootstrap: SiBootstrap,
   "Tailwind CSS": SiTailwindcss,
@@ -72,10 +81,16 @@ const iconMap = {
   jQuery: SiJquery,
   Zustand: SiReact,
   GraphQL: SiGraphql,
+  Shadcn: null,
   "Node.js": SiNodedotjs,
   "Express.js": SiExpress,
   MongoDB: SiMongodb,
+  Postgres: FaDatabase,
   "SQL Server": FaDatabase,
+  Prisma: null,
+  ORM: null,
+  Neon: null,
+  Innjest: null,
   "RESTful APIs": FaServer,
   OAuth2: FaLock,
   JWT: FaKey,
@@ -156,7 +171,13 @@ export default function Skills() {
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          {Icon ? <Icon className="text-blue-500 w-6 h-6" /> : <div className="w-6 h-6 flex items-center justify-center bg-blue-500 text-white text-xs rounded-full">{initials}</div>}
+                          {Icon ? (
+                            <Icon className="text-blue-500 w-6 h-6" />
+                          ) : (
+                            <div className="w-6 h-6 flex items-center justify-center bg-blue-500 text-white text-xs rounded-full">
+                              {initials}
+                            </div>
+                          )}
                           <span className="font-medium">{it.name}</span>
                         </div>
                         <span className="text-sm font-semibold">{it.percent}%</span>
