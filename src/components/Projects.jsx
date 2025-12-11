@@ -4,12 +4,15 @@ import { Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
 import PageTransition from "./PageTransition";
 import ProjectDetail from "./ProjectDetail";
+
+const coverImage = "https://tse4.mm.bing.net/th/id/OIP.DaAYb48QCqqwuvapJdMoWgHaEc?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3";
+
 const projects = [
-     {
+  {
     id: 'sensai',
     title: 'SensAI - Live',
     shortDesc: 'Full-stack AI-powered platform using Next.js and Google Gemini API',
-    cover: 'https://via.placeholder.com/400x240?text=SensAI',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
@@ -17,13 +20,14 @@ const projects = [
     ],
     tech: ['Next.js', 'PostgreSQL (Neon)', 'Clerk Auth', 'Inngest', 'Google Gemini API'],
     description: 'Developed a full-stack AI-powered platform using Next.js, PostgreSQL (Neon), and Clerk Authentication for secure user management. Integrated Google Gemini API for intelligent, real-time AI responses and implemented background jobs with Inngest for auto-updating industry insights.',
-    link: 'https://github.com/AyyanNadeem01/sensai'
+    link: 'https://github.com/AyyanNadeem01/sensai',
+    liveLink: 'https://sensai-pp54.onrender.com/'
   },
   {
     id: 'product-nextjs',
     title: 'PRODUCT - Next.js Service Website',
     shortDesc: 'Service website with full user auth, UI, and admin dashboard in Next.js',
-    cover: 'https://via.placeholder.com/400x240?text=PRODUCT',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
@@ -31,41 +35,44 @@ const projects = [
     ],
     tech: ['Next.js', 'Tailwind CSS', 'React', 'Node.js', 'Admin Dashboard'],
     description: 'A complete service website built entirely in Next.js, featuring full user authentication, responsive UI, and a powerful admin dashboard for managing content and users.',
-    link: 'https://github.com/AyyanNadeem01/product-nextjs'
+    link: 'https://github.com/AyyanNadeem01/product-nextjs',
+    liveLink: 'https://productclean.onrender.com/'
   },
-   {
+  {
     id: 'WhatsApp-Clone',
     title: 'WhatsApp Clone',
     shortDesc: 'Full Stack WhatsApp Clone using MERN stack and Socket.io',
-    cover: 'https://via.placeholder.com/400x240?text=whatsapp-clone',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
       'https://via.placeholder.com/260x160?text=SS3',
     ],
-    tech: ['React', 'Node.js', 'MongoDB', 'Express.js',"Socket.io","Web RTC","Axios","Zustand"],
+    tech: ['React', 'Node.js', 'MongoDB', 'Express.js', "Socket.io", "Web RTC", "Axios", "Zustand"],
     description: 'A real-time Full Stack WhatsApp Clone built with the MERN stack, featuring instant messaging, media sharing, and user authentication. Utilizes Socket.io for real-time communication and Zustand for state management.',
-    link: 'https://github.com/AyyanNadeem01/whatsapp-clone'
+    link: 'https://github.com/AyyanNadeem01/whatsapp-clone',
+    liveLink: 'https://whatsapp-clone-1-4bmi.onrender.com/'
   },
   {
     id: 'AI-Virtual-Assistant',
     title: 'AI Virtual Assistant',
     shortDesc: 'AI-powered virtual assistant web application',
-    cover: 'https://via.placeholder.com/400x240?text=aivirtualassistan',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
       'https://via.placeholder.com/260x160?text=SS3',
     ],
-    tech: ['React',"Node JS","Express.js","Context API","Gemini Api","JS Speech Recognition","Web Speech API"],
+    tech: ['React', "Node JS", "Express.js", "Context API", "Gemini Api", "JS Speech Recognition", "Web Speech API"],
     description: 'An AI-powered virtual assistant web application that leverages advanced natural language processing to assist users with various tasks, answer questions, and provide recommendations in real-time.',
-    link: 'https://github.com/AyyanNadeem01/AI-Virtual-Assistant'
+    link: 'https://github.com/AyyanNadeem01/AI-Virtual-Assistant',
+    liveLink: 'http://ai-virtual-assistant-frontend-p9zb.onrender.com/'
   },
-    {
+  {
     id: 'microerp',
     title: 'Micro ERP System',
     shortDesc: 'Full Stack ERP system built with MERN stack',
-    cover: 'https://via.placeholder.com/400x240?text=erp',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
@@ -73,13 +80,14 @@ const projects = [
     ],
     tech: ['React', 'Node.js', 'MongoDB', 'Express.js'],
     description: 'A comprehensive Full Stack ERP system built with MERN stack that tracks sales, manages clients, vendors, and ledgers for organizations. Features real-time updates and a modern UI.',
-    link: 'https://github.com/AyyanNadeem01/THE-FOOD-EXPRESS---ERP'
+    link: 'https://github.com/AyyanNadeem01/THE-FOOD-EXPRESS---ERP',
+    liveLink: 'https://erp-version-1-1-frontend.onrender.com/'
   },
   {
     id: 'book-review',
     title: 'Express Book Review',
     shortDesc: 'Backend-focused web app showcasing Node.js capabilities',
-    cover: 'https://via.placeholder.com/400x240?text=BOOK+REVIEW',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
@@ -92,7 +100,7 @@ const projects = [
     id: 'e-plant-shop',
     title: 'E Plant Shopping',
     shortDesc: 'Frontend-focused React application with great UX',
-    cover: 'https://via.placeholder.com/400x240?text=PLANT+SHOP',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
@@ -106,7 +114,7 @@ const projects = [
     id: 'nomi-ansari',
     title: 'Nomi Ansari Clone',
     shortDesc: 'E-commerce landing page with admin dashboard',
-    cover: 'https://via.placeholder.com/400x240?text=NOMI+ANSARI',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
@@ -119,7 +127,7 @@ const projects = [
     id: 'text-utils',
     title: 'Text Utils',
     shortDesc: 'Frontend React app for text analysis and manipulation',
-    cover: 'https://via.placeholder.com/400x240?text=TEXT+UTILS',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
@@ -132,7 +140,7 @@ const projects = [
     id: 'news-monkey',
     title: 'NewsMonkey - News App',
     shortDesc: 'React news application fetching from multiple sources',
-    cover: 'https://via.placeholder.com/400x240?text=NEWS+MONKEY',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
@@ -146,7 +154,7 @@ const projects = [
     id: 'inotebook',
     title: 'iNoteBook - Notes App',
     shortDesc: 'React notes application with CRUD operations',
-    cover: 'https://via.placeholder.com/400x240?text=INOTEBOOK',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
@@ -159,7 +167,7 @@ const projects = [
     id: 'callify',
     title: 'Callify - Language Learning App',
     shortDesc: 'Connects language learners with native speakers',
-    cover: 'https://via.placeholder.com/400x240?text=CALLIFY',
+    cover: coverImage,
     screenshots: [
       'https://via.placeholder.com/260x160?text=SS1',
       'https://via.placeholder.com/260x160?text=SS2',
@@ -171,6 +179,7 @@ const projects = [
     link: 'https://github.com/AyyanNadeem01/Callify'
   },
 ];
+
 export default function Projects() {
   const { theme } = useTheme();
 
@@ -212,8 +221,7 @@ export default function Projects() {
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-400 text-sm mb-4">{project.shortDesc}</p>
 
-                <div className="flex gap-3">
-                  {/* View Details Button */}
+                <div className="flex gap-3 flex-wrap">
                   <Link
                     to={`/projects/${project.id}`}
                     state={{ project }}
@@ -222,7 +230,6 @@ export default function Projects() {
                     View Details
                   </Link>
 
-                  {/* GitHub Button */}
                   <a
                     href={project.link}
                     target="_blank"
@@ -231,6 +238,17 @@ export default function Projects() {
                   >
                     GitHub
                   </a>
+
+                  {project.liveLink && (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md font-semibold transition"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
