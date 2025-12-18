@@ -21,7 +21,7 @@ const projects = [
     tech: ['Next.js', 'PostgreSQL (Neon)', 'Clerk Auth', 'Inngest', 'Google Gemini API'],
     description: 'Developed a full-stack AI-powered platform using Next.js, PostgreSQL (Neon), and Clerk Authentication for secure user management. Integrated Google Gemini API for intelligent, real-time AI responses and implemented background jobs with Inngest for auto-updating industry insights.',
     link: 'https://github.com/AyyanNadeem01/sensai',
-    liveLink: 'https://sensai-pp54.onrender.com/'
+    liveLink: 'https://sensai-pi-red.vercel.app/'
   },
   {
     id: 'product-nextjs',
