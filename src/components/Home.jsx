@@ -106,7 +106,7 @@ export default function Home() {
 
         {/* Resume Button */}
         <motion.a
-          href="https://drive.google.com/file/d/1EpJ3Mzih_QNS2gHpsxDF3alXw_RzldjK/view?usp=drive_open"
+          href="https://drive.google.com/file/d/197j2Cf6ki_kC9ryfFdUgGfIbS0Um7Kp-/view"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05, y: -2 }}
